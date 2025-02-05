@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chessarama Codex - Chessarama Codex</title>
+<title>Chessarama Codex - Search</title>
 
 
 
-<meta name="twitter:title" content="Chessarama Codex - Chessarama Codex">
-<meta property="og:title" content="Chessarama Codex - Chessarama Codex">
+<meta name="twitter:title" content="Chessarama Codex - Search">
+<meta property="og:title" content="Chessarama Codex - Search">
 
 
 <meta name="author" content="Minimol Games">
@@ -78,7 +78,7 @@
 </div>    </header>
     <nav id="sidebar-navigation" class="p-2 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-full">
         <ul id="sidebar-items" role="list">
-                            <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
+                            <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
                     <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">General</h4>
                                             <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -137,12 +137,27 @@
     </aside>
     <main id="content" class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
         <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)] prose dark:prose-invert">
-    
+        <h1>Search the documentation site</h1>
+    <style>
+        #searchMenuButton, .edit-page-link {
+            display: none !important;
+        }
+
+        #search-results {
+            max-height: unset !important;
+        }
+    </style>
+    <div id="hyde-search">
+    <noscript>
+        The search feature requires JavaScript to be enabled in your browser.
+    </noscript>
+    <input class="w-full rounded text-base leading-normal bg-gray-100 dark:bg-gray-700 py-2 px-3 max-w-xs border-b-4 border-indigo-400" type="search" name="search" id="search-input" placeholder="Search..." autocomplete="off" autofocus>
+</div>
     <header id="document-header" class="flex items-center flex-wrap justify-between prose-h1:mb-3">
-        <h1>Chessarama Codex</h1>
+        
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <p>Game information about the game <a href="https://store.steampowered.com/app/1831830/Chessarama/">Chessarama</a></p>
+        
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         

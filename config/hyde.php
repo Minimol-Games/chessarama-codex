@@ -143,7 +143,7 @@ return [
     |
     */
 
-    'output_directory' => '_site',
+    'output_directory' => 'docs',
 
     /*
     |--------------------------------------------------------------------------
@@ -180,11 +180,11 @@ return [
     */
 
     'output_directories' => [
-        \Hyde\Pages\HtmlPage::class => '',
+        \Hyde\Pages\HtmlPage::class => 'pages',
         \Hyde\Pages\BladePage::class => '',
         \Hyde\Pages\MarkdownPage::class => '',
         \Hyde\Pages\MarkdownPost::class => 'posts',
-        \Hyde\Pages\DocumentationPage::class => 'docs',
+        \Hyde\Pages\DocumentationPage::class => '',
     ],
 
     /*

@@ -5,6 +5,7 @@
 /.vscode
 /.vagrant
 /.cache
+/_site
 .phpunit.result.cache
 
 .env
